@@ -1,0 +1,11 @@
+*{margin:0;padding:0;}
+a{text-decoration:none;color:#666666;font-size:12px;font-family:"微软雅黑";}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:12px;color:#666666;font-family:"微软雅黑";}
+p{color:#666666;font-size:12px;font-family:"微软雅黑";}
+ul li,ol li{list-style:none;}
+i,em{font-style:normal;font-size:12px;color:#666666;font-family:"微软雅黑";}
+b,strong{font-weight:normal;font-size:12px;color:#666666;font-family:"微软雅黑";}
+input{outline:none;}
+.clearfix:after{content:'';display:block;clear:both;}
+.clearfix{zoom: 1;}
+img{vertical-align:top;}

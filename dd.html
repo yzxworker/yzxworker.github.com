@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>订单</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/mt-dls-head.css"/>
+		<link rel="stylesheet" type="text/css" href="css/dls-foot.css"/>
+		<link rel="stylesheet" href="css/dd-main.css" />
+		<script src="js/base.js"></script>
+		<script src="js/dd-index.js"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="head">
+		<!--上-->
+		<div class="bj">
+			<div class="clearfix nav" id="nav">
+				<ul class="n-ull clearfix">
+					<li class="li1"><a href="javascript:;">收藏美团</a></li>
+					<li class="li2"><a href="javascript:;">登录</a></li>
+					<li class="li3"><a href="javascript:;">注册</a></li>
+					<li class="li4">
+						<a href="javascript:;">手机美团</a>
+						<span></span>
+						<div class="head-xs-div">
+							<h3>免费下载美团手机版</h3>
+							<img src="img/bj31.png" alt="" />
+							<h3>免费下载猫眼电影手机版</h3>
+							<img src="img/bj31.png" alt="" />
+						</div>
+					</li>
+				</ul>
+				<ul class="n-ulr clearfix">
+					<li class="li1"><a href="javascript:;">我的订单</a></li>
+					<li class="li2">
+						<a href="javascript:;">我的美团</a>
+						<span></span>
+						<div class="head-xs-div1">
+							<a href="javascript:;">我的订单</a>
+							<a href="javascript:;">我的评价</a>
+							<a href="javascript:;">我的收藏</a>
+							<a href="javascript:;">我的积分</a>
+							<a href="javascript:;">抵用券</a>
+							<a href="javascript:;">我的余额</a>
+							<a href="javascript:;">账户设置</a>
+						</div>
+					</li>
+					<li class="li2">
+						<a href="javascript:;">最近浏览</a>
+						<span></span>
+						<div class="head-xs-div2">
+							<p>暂无浏览记录</p>
+						</div>
+					</li>
+					<li class="li3">
+						<a href="javascript:;">购物车<i>0</i>件</a>
+						<span></span>
+						<div class="head-xs-div2">
+							<p>暂时没有商品</p>
+						</div>
+					</li>
+					<li class="li2">
+						<a href="javascript:;">联系客服</a>
+						<span></span>
+						<div class="head-xs-div3">
+							<a href="javascript:;">申请退款</a>
+							<a href="javascript:;">申请退换货</a>
+							<a href="javascript:;">查看美团券</a>
+							<a href="javascript:;">绑定手机号</a>
+							<a href="javascript:;">常见问题</a>
+						</div>
+					</li>
+					<li class="li2">
+						<a href="javascript:;">我是商家</a>
+						<span></span>
+						<div class="head-xs-div4">
+							<a href="javascript:;">登录商家中心</a>
+							<a href="javascript:;">我想合作</a>
+							<a href="javascript:;">手机免费开店</a>
+							<a href="javascript:;">商家营销平台</a>
+						</div>
+					</li>
+					<li class="li4">
+						<a href="javascript:;">更多</a>
+						<span></span>
+						<div class="head-xs-div5">
+							<a href="javascript:;">手机版</a>
+							<a href="javascript:;">邮件订阅</a>
+							<a href="javascript:;">邀请好友</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--下-->	
+		<div class="below clearfix">
+			<div class="be-l clearfix">
+				<h1>美团网</h1>
+				<div class="bel-r">
+					<i>北京</i>
+					<span>切换城市</span>
+				</div>
+			</div>
+			<div class="be-r clearfix">
+				<div class="ber-l clearfix">
+					<div class="berl-t clearfix">
+						<div class="xl" id="xl">
+							<span></span>
+							<i id="xl-i">团购</i>
+							<div class="xl-div">
+								<p id="p1">商家</p>
+							</div>
+						</div>
+						<input type="text" value="请输入商品名称、地址等"  class="berlt-ipt"/>
+						<input type="button" value="搜索" class="berlt-btn" />
+					</div>
+					<p class="berl-b clearfix">
+						<a href="javascript:;">真功夫</a>
+						<a href="javascript:;">蛋糕</a>
+						<a href="javascript:;">鲜花</a>
+						<a href="javascript:;">花店</a>
+						<a href="javascript:;">康乃馨</a>
+						<a href="javascript:;">体检</a>
+						<a href="javascript:;">眼睛</a>
+						<a href="javascript:;">味多美</a>
+						<a href="javascript:;">宝岛</a>
+						<a href="javascript:;">正一味</a>
+					</p>
+				</div>
+				<ul class="ber-r clearfix">
+					<li>
+						<span>
+							<img src="images/bj3.jpg" alt="" />
+						</span>
+						<p>随时退</p>
+					</li>
+					<li>
+						<span>
+							<img src="images/bj4.jpg" alt="" />
+						</span>
+						<p>不满意免单</p>
+					</li>
+					<li>
+						<span>
+							<img src="images/bj5.jpg" alt="" />
+						</span>
+						<p>过期退</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+		 <!--导航-->
+	 	<div class="mian">
+	 	<!--1-->
+		<div class="mian-1">
+			<!--nav-->
+			<div class="m1-t clearfix">
+				<h3 id="m1-t-h3">全部分类<i class="m1-i"></i></h3>
+				<ul class="clearfix">
+					<li><a href="javascript:;">首页</a></li>
+					<li><a href="javascript:;">今日新单</a></li>
+					<li><a href="javascript:;">购物</a></li>
+					<li><a href="javascript:;">身边外卖</a></li>
+					<li><a href="javascript:;">名店抢购</a></li>
+				</ul>
+			</div>
+			<div class="dwxxk clearfix" id="dwxxk">
+				<ul class="m1b-l" id="m1b-l">
+					<li class="mb-xxk">
+						<a href="msym.html">美食</a>
+						<span>
+							<i>自助餐</i>
+							<i>代金券</i>
+						</span>
+						<em></em>
+					</li>
+					<li class="mb-xxk">
+						<a href="javascript:;">酒店/客栈</a>
+						<span>
+							<i>经济型酒店</i>
+						</span>
+						<em></em>
+					</li>
+					<li class="mb-xxk">
+						<a href="javascript:;">电影/在线选座</a>
+						<em></em>
+					</li>
+					<li id="li">
+						<a href="javascript:;">KTV</a>
+					</li>
+					<li class="mb-xxk">
+						<a href="javascript:;">休闲娱乐</a>
+						<span>
+							<i>足疗按摩</i>
+							<i>温泉</i>
+						</span>
+						<em></em>
+					</li>
+					<li class="mb-xxk">
+						<a href="javascript:;">周边游/旅游</a>
+						<em></em>
+					</li>
+					<li class="mb-xxk">
+						<a href="javascript:;">生活服务</a>
+						<span>
+							<i>摄影婚纱</i>
+							<i>个性写真</i>
+						</span>
+						<em></em>
+					</li>
+					<li class="mb-xxk">
+						<a href="javascript:;">购物</a>
+						<span>
+							<i>男装</i>
+							<i>女装</i>
+						</span>
+						<em></em>
+					</li>
+					<li class="li1 mb-xxk">
+						<a href="javascript:;">丽人</a>
+						<span>
+							<i>美发</i>
+							<i>美甲美睫</i>
+						</span>
+						<em></em>
+					</li>
+				</ul>
+				<div class="xxk1" id="xxk1">
+					<div  class="clearfix bk">
+						<dl>
+							<dt><a href="msym.html">美食</a></dt>
+							<dd><a href="javascript:;">代金券</a></dd>
+							<dd><a href="javascript:;">甜品饮品</a></dd>
+							<dd><a href="javascript:;">火锅</a></dd>
+							<dd><a href="javascript:;">自助餐</a></dd>
+							<dd><a href="javascript:;">小吃快餐</a></dd>
+							<dd><a href="javascript:;">日韩料理</a></dd>
+							<dd><a href="javascript:;">西餐</a></dd>
+							<dd><a href="javascript:;">聚餐宴请</a></dd>
+							<dd><a href="javascript:;">烧烤烤肉</a></dd>
+							<dd><a href="javascript:;">东北菜</a></dd>
+							<dd><a href="javascript:;">川湘菜</a></dd>
+							<dd><a href="javascript:;">江浙菜</a></dd>
+							<dd><a href="javascript:;">香锅烤鱼</a></dd>
+							<dd><a href="javascript:;">粤港菜</a></dd>
+							<dd><a href="javascript:;">中式烧烤/烤串</a></dd>
+							<dd><a href="javascript:;">西北菜</a></dd>
+						</dl>
+						<dl>
+							<dt></dt>
+							<dd><a href="javascript:;">咖啡酒吧茶馆</a></dd>
+							<dd><a href="javascript:;">云贵菜</a></dd>
+							<dd><a href="javascript:;">东南亚菜</a></dd>
+							<dd><a href="javascript:;">海鲜素食</a></dd>
+							<dd><a href="javascript:;">台湾/客家菜</a></dd>
+							<dd><a href="javascript:;">创意菜汤/粥/炖菜</a></dd>
+							<dd><a href="javascript:;">蒙餐</a></dd>
+							<dd><a href="javascript:;">新疆菜</a></dd>
+							<dd><a href="javascript:;">其他美食</a></dd>
+							<dd><a href="javascript:;">京菜鲁菜</a></dd>
+						</dl>
+					</div>
+					<div class="clearfix">
+						<dl>
+							<dt><a href="javascript:;">酒店</a></dt>
+							<dd><a href="javascript:;">经济型酒店</a></dd>
+							<dd><a href="javascript:;">豪华酒店</a></dd>
+							<dd><a href="javascript:;">主题酒店</a></dd>
+							<dd><a href="javascript:;">度假酒店/度假村</a></dd>
+							<dd><a href="javascript:;">公寓型酒店</a></dd>
+							<dd><a href="javascript:;">客栈</a></dd>
+							<dd><a href="javascript:;">青年旅馆</a></dd>
+						</dl>
+					</div>
+					<div class="clearfix bk">
+						<dl>
+							<dt><a href="javascript:;">当前热映</a></dt>
+							<dd><a href="javascript:;">美国队长3</a></dd>
+							<dd><a href="javascript:;">百鸟朝凤</a></dd>
+							<dd><a href="javascript:;">愤怒的小鸟</a></dd>
+							<dd><a href="javascript:;">超脑48小时</a></dd>
+							<dd><a href="javascript:;">北京遇上西雅图</a></dd>
+							<dd><a href="javascript:;">幻体:续命游戏</a></dd>
+							<dd><a href="javascript:;">分歧者3:重酬世</a></dd>
+							<dd><a href="javascript:;">再见,再也不见</a></dd>
+							<dd><a href="javascript:;">钢刀</a></dd>
+							<dd><a href="javascript:;">笔仙诡影</a></dd>
+						</dl>
+						<dl>
+							<dt><a href="javascript:;">热门影院</a></dt>
+							<dd><a href="javascript:;">星美国际影城</a></dd>
+							<dd><a href="javascript:;">海上国际影城</a></dd>
+							<dd><a href="javascript:;">地中海影城</a></dd>
+							<dd><a href="javascript:;">星光影城</a></dd>
+							<dd><a href="javascript:;">太平洋电影版</a></dd>
+							<dd><a href="javascript:;">左岸国际影城</a></dd>
+							<dd><a href="javascript:;">SFC上影影城</a></dd>
+							<dd><a href="javascript:;">大光明电影院</a></dd>
+							<dd><a href="javascript:;">比高电影城</a></dd>
+							<dd><a href="javascript:;">中影国际影城</a></dd>
+						</dl>
+					</div>
+					<div class="clearfix">
+						<dl>
+							<dt><a href="javascript:;">休闲娱乐</a></dt>
+							<dd><a href="javascript:;">KTV</a></dd>
+							<dd><a href="javascript:;">其他娱乐</a></dd>
+							<dd><a href="javascript:;">演出赛事</a></dd>
+							<dd><a href="javascript:;">桌游/电玩</a></dd>
+							<dd><a href="javascript:;">运动健身</a></dd>
+							<dd><a href="javascript:;">4D/5D电影</a></dd>
+							<dd><a href="javascript:;">足疗按摩</a></dd>
+							<dd><a href="javascript:;">足浴/汗蒸</a></dd>
+							<dd><a href="javascript:;">温泉</a></dd>
+							<dd><a href="javascript:;">DIY手工</a></dd>
+							<dd><a href="javascript:;">密室逃脱</a></dd>
+							<dd><a href="javascript:;">酒吧咖啡</a></dd>
+							<dd><a href="javascript:;">真人CS</a></dd>
+						</dl>
+					</div>
+					<div class="clearfix bk">
+						<dl>
+							<dt><a href="javascript:;">周边游</a></dt>
+							<dd><a href="javascript:;">景点</a></dd>
+							<dd><a href="javascript:;">温泉</a></dd>
+							<dd><a href="javascript:;">主题公园</a></dd>
+							<dd><a href="javascript:;">水上乐园</a></dd>
+							<dd><a href="javascript:;">动植物园</a></dd>
+							<dd><a href="javascript:;">海洋馆</a></dd>
+							<dd><a href="javascript:;">展览馆</a></dd>
+							<dd><a href="javascript:;">游船</a></dd>
+							<dd><a href="javascript:;">高空观景</a></dd>
+							<dd><a href="javascript:;">真人CS</a></dd>
+							<dd><a href="javascript:;">单车出租</a></dd>
+							<dd><a href="javascript:;">其他游戏</a></dd>
+							<dd><a href="javascript:;">漂流</a></dd>
+							<dd><a href="javascript:;">农家乐</a></dd>
+						</dl>
+						<dl>
+							<dt><a href="javascript:;">旅游</a></dt>
+							<dd><a href="javascript:;">境外游</a></dd>
+							<dd><a href="javascript:;">景点门票</a></dd>
+							<dd><a href="javascript:;">国内游</a></dd>
+						</dl>
+					</div>
+					<div class="clearfix">
+						<dl>
+							<dt><a href="javascript:;">生活服务</a></dt>
+							<dd><a href="javascript:;">婚纱摄影</a></dd>
+							<dd><a href="javascript:;">个性写真</a></dd>
+							<dd><a href="javascript:;">亲子摄影</a></dd>
+							<dd><a href="javascript:;">其他摄影</a></dd>
+							<dd><a href="javascript:;">培训课程</a></dd>
+							<dd><a href="javascript:;">其他生活</a></dd>
+							<dd><a href="javascript:;">汽车服务</a></dd>
+							<dd><a href="javascript:;">体检/齿科</a></dd>
+							<dd><a href="javascript:;">衣物/皮具洗护</a></dd>
+							<dd><a href="javascript:;">鲜花</a></dd>
+							<dd><a href="javascript:;">母婴亲子</a></dd>
+							<dd><a href="javascript:;">配镜</a></dd>
+							<dd><a href="javascript:;">照片冲印</a></dd>
+							<dd><a href="javascript:;">商场购物卡</a></dd>
+							<dd><a href="javascript:;">服装鞋包</a></dd>
+							<dd><a href="javascript:;">电器数码</a></dd>
+						</dl>
+					</div>
+					<div class="clearfix">
+						<dl>
+							<dt><a href="javascript:;">购物</a></dt>
+							<dd><a href="javascript:;">女装</a></dd>
+							<dd><a href="javascript:;">男装</a></dd>
+							<dd><a href="javascript:;">内衣</a></dd>
+							<dd><a href="javascript:;">鞋靴</a></dd>
+							<dd><a href="javascript:;">食品</a></dd>
+							<dd><a href="javascript:;">家居用品</a></dd>
+							<dd><a href="javascript:;">美妆</a></dd>
+							<dd><a href="javascript:;">箱包</a></dd>
+							<dd><a href="javascript:;">户外运动</a></dd>
+							<dd><a href="javascript:;">配饰手表</a></dd>
+							<dd><a href="javascript:;">母婴玩具</a></dd>
+							<dd><a href="javascript:;">家纺</a></dd>
+							<dd><a href="javascript:;">数码电器</a></dd>
+							<dd><a href="javascript:;">家具家装</a></dd>
+							<dd><a href="javascript:;">汽车用品</a></dd>
+							<dd><a href="javascript:;">本地购物</a></dd>
+						</dl>
+					</div>
+					<div class="clearfix">
+						<dl>
+							<dt><a href="javascript:;">丽人</a></dt>
+							<dd><a href="javscript:;">美发</a></dd>
+							<dd><a href="javscript:;">美容美发</a></dd>
+							<dd><a href="javscript:;">美甲美瞳</a></dd>
+							<dd><a href="javscript:;">瑜伽舞蹈</a></dd>
+							<dd><a href="javscript:;">瘦身纤体</a></dd>
+							<dd><a href="javscript:;">韩式定妆</a></dd>
+							<dd><a href="javscript:;">祛痘</a></dd>
+							<dd><a href="javscript:;">纹身</a></dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		 </div>
+		
+		
+		<!--主题-->
+		<div class="homepage clearfix">
+			<div class="homepagel" id="homepagel">
+				<a href="javascript:;" class="hplzy">我的主页</a>
+				<dl class="myOrder">
+					<dt>我的订单</dt>
+					<dd><a href="javascript:;" class="tivea">团购订单</a></dd>
+					<dd><a href="javascript:;">电影选座</a></dd>
+					<dd><a href="javascript:;">酒店预订</a></dd>
+					<dd><a href="javascript:;">KTV预订</a></dd>
+					<dd><a href="javascript:;">我的抽奖</a></dd>
+					<dd><a href="javascript:;">我的收藏</a></dd>
+				</dl>
+				<dl class="myOrder myOrder1">
+					<dt>我的评价</dt>
+					<dd class="myOrderdd"><a href="javascript:;">待评价</a><b>2</b></dd>
+					<dd><a href="javascript:;">已评价</a></dd>
+				</dl>
+				<dl class="myOrder">
+					<dt>退款维权</dt>
+					<dd><a href="javascript:;">我的退款</a></dd>
+				</dl>
+				<dl class="myOrder myOrder2">
+					<dt>我的账户</dt>
+					<dd><a href="javascript:;">我的积分</a></dd>
+					<dd><a href="javascript:;">抵用券</a></dd>
+					<dd><a href="javascript:;">我的余额</a></dd>
+					<dd><a href="javascript:;">账户设置</a></dd>
+					<dd><a href="javascript:;">安全中心</a></dd>
+				</dl>
+			</div>
+			<div class="homepager">
+				<div class="home-top clearfix">
+					<select>
+						<option>全部状态</option>
+						<option>未消费</option>
+						<option>已消费</option>
+						<option>待评价</option>
+						<option>已评价</option>
+					</select>
+					<p>快捷提示:您有<i>未消费(1)</i><i>待评价(2)</i></p>
+				</div>
+				<div class="home-se clearfix">
+					<span class="hs-span1">团购信息</span>
+					<span class="hs-span2">数量</span>
+					<span class="hs-span3">总价</span>
+					<span class="hs-span4">订单状态</span>
+					<span class="hs-span5">操作</span>
+				</div>
+				<ul class="home-ul" id="home-ul">
+					<li>
+						<div class="homeul-div clearfix">
+							<p>订单编号:<i>2594423823</i></p>
+							<a href="javascript:;" class="removehome">删除</a>
+						</div>
+						<div class="homeul-div1 clearfix">
+							<div class="hud-d1">
+								<a href="#" class="hudd-a"><img src="images/bj93.jpg" alt=""/></a>
+								<div class="hudd-d">
+									<p><a href="javascript:;">单人自助晚餐</a></p>
+									<p>有效期至:2016-12-31</p>
+									<p class="hu3d-p"><a href="#">商家信息</a></p>
+								</div>
+							</div>
+							<div class="hud-d2">
+								<p>27</p>
+							</div>
+							<div class="hud-d3">
+								<p>¥1269</p>
+							</div>
+							<div class="hud-d4">
+								<p>已使用</p>
+								<p><a href="ddxq.html">订单详情</a></p>
+							</div>
+							<div  class="hud-d5">
+								<p><a href="#">评价</a></p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="homeul-div clearfix">
+							<p>订单编号:<i>2223832923</i></p>
+							<a href="javascript:;" class="removehome">删除</a>
+						</div>
+						<div class="homeul-div1 clearfix">
+							<div class="hud-d1">
+								<a href="#" class="hudd-a"><img src="images/bj94.jpg" alt=""/></a>
+								<div class="hudd-d">
+									<p><a href="javascript:;">玫瑰花园烤肉自助</a></p>
+									<p>有效期至:2016-12-31</p>
+									<p class="hu3d-p"><a href="#">商家信息</a></p>
+								</div>
+							</div>
+							<div class="hud-d2">
+								<p>27</p>
+							</div>
+							<div class="hud-d3">
+								<p>¥1269</p>
+							</div>
+							<div class="hud-d4">
+								<p>已使用</p>
+								<p><a href="ddxq.html">订单详情</a></p>
+							</div>
+							<div  class="hud-d5">
+								<p><a href="#">评价</a></p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="homeul-div clearfix">
+							<p>订单编号:<i>1766541523</i></p>
+							<a href="javascript:;" class="removehome">删除</a>
+						</div>
+						<div class="homeul-div1 clearfix">
+							<div class="hud-d1">
+								<a href="#" class="hudd-a"><img src="images/bj95.jpg" alt=""/></a>
+								<div class="hudd-d">
+									<p><a href="javascript:;">夏日情ktv欢唱</a></p>
+									<p>有效期至:2016-12-31</p>
+									<p class="hu3d-p"><a href="#">商家信息</a></p>
+								</div>
+							</div>
+							<div class="hud-d2">
+								<p>27</p>
+							</div>
+							<div class="hud-d3">
+								<p>¥1269</p>
+							</div>
+							<div class="hud-d4">
+								<p>未使用</p>
+								<p><a href="ddxq.html">订单详情</a></p>
+							</div>
+							<div  class="hud-d5">
+								<p><a href="#">查看密码</a></p>
+								<p><a href="#">申请退款</a></p>
+							</div>
+						</div>
+					</li>
+				
+				</ul>
+			</div>
+		</div>
+		
+		
+		
+		<!--尾部-->
+			<div class="foot">
+		<!--底部-->
+			<div class="f-d2 ">
+				<div class="fd-d clearfix">
+				<div class="f2d-d clearfix">
+					<dl>
+						<dt><h3>获取更新</h3></dt>
+						<dd><a href="javascript:;">邮件订阅</a></dd>
+						<dd><a href="javascript:;">iPhone/Android</a></dd>
+						<dd><a href="javascript:;">美团QQ空间</a></dd>
+						<dd><a href="javascript:;">美团新浪微博</a></dd>
+						<dd><a href="javascript:;">sitemap</a></dd>
+						<dd><a href="javascript:;">RSS订阅</a></dd>
+					</dl>
+					<dl>
+						<dt><h3>商务合作</h3></dt>
+						<dd><a href="javascript:;">商家合作</a></dd>
+						<dd><a href="javascript:;">美团商家营销平台</a></dd>
+						<dd><a href="javascript:;">市场合作</a></dd>
+						<dd><a href="javascript:;">美团联盟</a></dd>
+						<dd><a href="javascript:;">美团云</a></dd>
+						<dd><a href="javascript:;">廉正邮箱</a></dd>
+					</dl>
+					<dl>
+						<dt><h3>公司信息</h3></dt>
+						<dd><a href="javascript:;">关于美团</a></dd>
+						<dd><a href="javascript:;">美团承诺</a></dd>
+						<dd><a href="javascript:;">媒体报道</a></dd>
+						<dd><a href="javascript:;">加入我们</a></dd>
+						<dd><a href="javascript:;">法律声明</a></dd>
+						<dd><a href="javascript:;">用户协议</a></dd>
+						<dd><a href="javascript:;">营业执照</a></dd>
+					</dl>
+					<dl>
+						<dt><h3>用户帮助</h3></dt>
+						<dd><a href="javascript:;">申请退款</a></dd>
+						<dd><a href="javascript:;">查看美团券密码</a></dd>
+						<dd><a href="javascript:;">常见问题</a></dd>
+						<dd><a href="javascript:;">开放API</a></dd>
+						<dd><a href="javascript:;">反诈骗公告</a></dd>
+					</dl>
+				</div>
+				<div class="f2d-d1">
+					<img src="img/bj26.png" alt="" />
+					<p class="f-p1">客服电话</p>
+					<p class="f-p1">10107888 (9:00-23:00)</p>
+					<a href="javascript:;" class="f-a">退款、退换货、查看美团券</a>
+					<p class="f-p3">参考教程，轻松搞定!</p>
+				</div>
+		</div>
+			
+			
+			</div>
+			<div class="f2d-b">
+				<p>2016美团网团购 meituan.com 京ICP证070791号 京公网安备11010502025545号</p>
+				<ul class="f2db-ul clearfix">
+					<li><a href="javascript:;"></a></li>
+					<li><a href="javascript:;" class="ul-a1"></a></li>
+					<li><a href="javascript:;" class="ul-a2"></a></li>
+				</ul>
+			</div>
+		</div>
+
+	</body>
+</html>

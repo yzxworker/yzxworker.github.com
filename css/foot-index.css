@@ -1,0 +1,31 @@
+.foot{width:1170px;margin:0 auto;margin-top:40px;}
+.f-ul {border:1px solid #eeeeee;border-right:none;border-top:none;}
+.f-ul li{float:left;width:90px;height:23px;line-height:23px;text-align:center;border-right:1px solid #eeeeee;background:#f9f9f9;border-top:1px solid #eeeeee;}
+.f-d1 ul{padding: 10px 0;border:1px solid #eeeeee;border-top:none;display:none;}
+.f-d1 li{width:90px; overflow:hidden;white-space:nowrap;text-overflow:ellipsis;height:22px;line-height:22px;text-align:center;float:left;}
+.f-d1 .show{display:block;}
+.f-d2{margin-top:20px;border-top:1px solid #eeeeee;}
+.fd-d{margin-top:1px ;border-top:1px solid #eeeeee;}
+.f2d-d {float:left;}
+.f2d-d dl{float:left;width:205px;padding-left:11px;height:206px;padding-top:9px;}
+.f2d-d dl dt{height:44px;line-height:44px;}
+.f2d-d dl dt h3{font-size:14px;color:#666666;font-weight:bold;}
+.f2d-d dl dd{height:22px;line-height:22px;}
+.f2d-d a{color:#999999;}
+.f2d-d1{float:left;padding-top:20px;padding-left:40px;}
+.f-p1{font-size:14px;line-height:30px;}
+.f-a{display:block;margin-top:25px;line-height:20px;}
+.f-p3{font-size:14px;line-height:30px;color:#2bb8aa;}
+.f2d-b{border-top:1px solid #eeeeee;background:#f9f9f9;height:168px;}
+.f2d-b p{line-height:70px;text-align:center;}
+.f2db-ul{width:340px;margin:0 auto;}
+.f2db-ul li{float:left;margin-right:4px;}
+.f2db-ul li a{display:block;width:107px;height:38px;background:url(../img/bj27.png) no-repeat 0 0;}
+.f2db-ul .ul-a1{background:url(../img/bj28.png) no-repeat 0 0;}
+.f2db-ul .ul-a2{background:url(../img/bj29.png) no-repeat 0 0;}
+
+
+.foot a:hover{text-decoration:underline;}
+
+/*js*/
+.f-ul .active{background:#eeeeee}
