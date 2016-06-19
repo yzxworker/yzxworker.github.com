@@ -6,7 +6,7 @@ DOMReady(function(){
 	var bjnum=1;
 	var oBody=document.body;
 	timer1=setInterval(function(){
-		oBody.style.backgroundImage='url(../MyWeb/images/zpbj'+(bjnum%2+1)+'.jpg)';
+		oBody.style.backgroundImage='url(.././images/zpbj'+(bjnum%2+1)+'.jpg)';
 		bjnum++;
 	},5000);
 	// 底部菜单
@@ -77,7 +77,7 @@ DOMReady(function(){
 	function MyWorks(index){
 
 		radiusMove(aWpLi[index],360/aWpLi.length*index,{complete:function(){
-				aWpLi[num].style.backgroundImage='url(../MyWeb/images/zp'+num+'.jpg)';
+				aWpLi[num].style.backgroundImage='url(.././images/zp'+num+'.jpg)';
 				aWpLi[num].style.backgroundPosition='-'+(aWpLi[num].offsetLeft+oWorksPlay.offsetLeft-oWorksChild[num].offsetLeft)+'px -'+(aWpLi[num].offsetTop+oWorksPlay.offsetTop)+'px';
 				aWpLi[num].style.transition='all 1s';
 				num++;
@@ -97,7 +97,7 @@ DOMReady(function(){
 				}
 			}
 
-			oWorksChild[this.index].style.backgroundImage='url(../MyWeb/images/zp'+this.index+'.jpg)';
+			oWorksChild[this.index].style.backgroundImage='url(.././images/zp'+this.index+'.jpg)';
 			startMove(oWorksChild[this.index],{opacity:1});
 			startMove(aWpDiv[this.index],{top:aWpDiv[this.index].offsetHeight,opacity:0});
 			this.className='active';
