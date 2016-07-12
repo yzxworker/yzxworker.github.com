@@ -1,38 +1,11 @@
 $(document).ready(function(){
-	$('#dowebok').fullpage({
-	});
+    $('#dowebok').fullpage({
+      sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90']
+    });
+
 	setInterval(function(){
   	  $.fn.fullpage.moveSlideRight();
     }, 3000);
-	
-
-	var p1iNow=0;
-	$('#navbtn').on('click',function(){
-		if(p1iNow%2==0){
-			$('#headnav-min').animate({right:0+'rem'});
-		}else{
-			$('#headnav-min').animate({right:-15+'rem'});
-		}
-		p1iNow++;
-	});
-	$('.fp-prev').css({opacity:0});
-	$('.fp-next').css({opacity:0});
-
-	// 导航栏
-	$('#zynavbar').css({width:$('#headnav li').eq(0).outerWidth()});
-	
-	$('#headnav li').on('click',function(){
-		$('#zynavbar').animate({left:$(this).position().left,width:$(this).outerWidth()});
-	});
-	$('#headnav-min li').on('click',function(){
-		$('#headnav-min li a').css({background:'#ccc'});
-		$(this).find('a').css({background:'#21d4b6'});
-	});
-
-
-
-
-	
 
 
 
@@ -195,43 +168,4 @@ $(document).ready(function(){
 		});
 	};
 
-
-	// zyl
-	
-	$('.page6 .zt-1 li').click(function(){
-		var re1;
-		var re2;
-		var x=$('.page6 .zt-1 li').length;
-		$('.zt-2').css('display','block');
-		$('.page6 .zt-1 li a').css('background','rgba(0,214,178,0.3)');
-		$('.page6 .zt-1 li a').eq($(this).index()).css('background','rgba(0,214,178,1)');
-		
-		if($(this).index()==0 || $(this).index()==x-1){
-			$('.page6 .yf').css('display','none');
-		}else if($(this).index()==1){
-			$('.page6 .yf').css('display','block');
-			$('.page6 .yf .show').css('display','none');
-		}else{
-			$('.page6 .yf').css('display','block');
-			$('.page6 .yf .show').css('display','block');
-		}
-		
-		$('.page6 .zt-2 .by li').click(function(){
-			re1=$(this).index();
-			$('.page6 .zt-2 .by li a').css('background','rgba(0,214,178,0.3)');
-			$('.page6 .box .yf li a').css('background','rgba(0,214,178,0.3)');
-			$('.page6 .zt-2 .by li a').eq($(this).index()).css('background','rgba(0,214,178,1)');
-		});
-		
-		
-		$('.page6 .zt-2 .box .yf li').click(function(){
-			$('.page6 .box .yf li a').css('background','rgba(0,214,178,0.3)');
-			$('.page6 .box .yf li a').eq($(this).index()).css('background','rgba(0,214,178,1)');
-		});
-		
-		$('.page6 .zt-2 li a').css('background','rgba(0,214,178,0.3)');
-		$('.page6 .box .yf li a').css('background','rgba(0,214,178,0.3)');
-	});
-	
 });
-
