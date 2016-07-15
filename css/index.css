@@ -39,7 +39,19 @@
 .sidea .qqxq li p{ font-size:14px; line-height:20px; padding: 10px 5px 0 5px;width:100px; }
 .sidea .qqxq li img{ width:100%; height:100%; }
 
+/*提交*/
 
+.submit{ width:100%; height:100%; position:fixed; top:0; left:0; background:#21d4b6; z-index:999;text-align:right; display:none;}
+.submit input{background:#fff;}
+.sub-win{ width:30rem; height:30rem; margin-left:-15rem; margin-top:-15rem;padding-top: 20px; position:absolute; top:50%; left:50%; }
+.submit_name{ padding:0 5px  10px  5px; }
+.submit_name b{ float:left; width:25%; text-align:center;  font-size:16px; line-height:30px; }
+.submit_name input{ float:right; width:75%; height:30px; }
+.submit_name textarea{ float:right; width:75%; height:100px; border: none;}
+.submit .btn1{ width:75%;height:30px;background:#223F7E; margin-top:30px;font-size:14px;cursor:pointer;}
+
+.close-sub{position:absolute; width:25px; height:25px; background:url(../img/gb.png) no-repeat; background-size:100% 100%; margin-right:0.75rem; text-indent:-9999px; top:1rem; right:0.25rem;}
+.sub-tips{ font-size:14px; color:red; text-align:center;height:30px;line-height:30px; }
 
 
 
@@ -66,16 +78,6 @@ header{ height:85px;  position:fixed; top:0; left:0; width:100%; z-index:100;bac
 
 html{ font-size: 20px;}
 
-.page3{height: 100%; background: url(../images/cp.jpg) no-repeat center; background-size: cover; padding: 0; position: relative;}
-.page3 .bg{ width: 100%; height: 100%; background: #fff; opacity: 0.4; filter: alpha(opacity:40); position: absolute; left: 0; top: 0;}
-.page3-content{ width: 100%; position: absolute; top: 15%; z-index: 2;}
-.p3-tit{ padding: 0; width: 21rem; text-align: center; margin: 0 auto; font-size: 2.05rem; color: #21D4B6; height: 2.55rem; line-height: 2.55rem; font-weight: bold; border-bottom: 1px solid #21D4B6; letter-spacing: 0.4rem;}
-.p3-tit1{ padding: 0; width: 21rem; height: 1rem; line-height: 1rem; margin: 0 auto; text-align: center; font-size: 1rem; color: #21D4B6; letter-spacing: 0.2rem;}
-
-
-
-
-
 
 /*媒体查询*/
 /* 超小设备（手机，小于 768px） */
@@ -98,7 +100,18 @@ html{ font-size: 20px;}
 	.sub .button1{ width:75%;height:30px;background:#223F7E; margin-top:30px;font-size:14px;cursor:pointer;}
 	
 
+	/*注册*/
 
+	.submit{ width:100%; height:100%; position:fixed; top:0; left:0; background:#21d4b6; z-index:999;text-align:right;}
+	.submit input{background:#fff;}
+	.sub-win{ width:22rem; height:30rem; margin-left:-11rem; margin-top:-18rem;padding-top: 20px; position:absolute; top:50%; left:50%; }
+	.submit_name{ padding:0 5px  10px  5px; }
+	.submit_name b{ float:left; width:25%; text-align:center;  font-size:12px; line-height:30px; }
+	.submit_name input{ float:right; width:75%; height:30px; }
+	.submit_name textarea{ width: 75%; height: 100px;}
+	.submit .btn1{ width:75%;height:30px;background:#223F7E; margin-top:30px;font-size:14px;cursor:pointer;}
+	.close-sub{position:absolute; width:25px; height:25px; background:url(../img/gb.png) no-repeat; background-size:100% 100%; margin-right:0.75rem; text-indent:-9999px; top:2rem; right:2rem;}
+	.sub-tips{ font-size:14px; color:red; text-align:center;height:30px;line-height:30px; }
 
 
 

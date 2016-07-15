@@ -474,10 +474,10 @@ $(document).ready(function(){
 	// 提交订单
 	var subUrl='http://113.139.98.82/web/index.php?g=user&m=Integral';
 	$('.p3-introduce-img li').click(function(){
-		$('#submit').css('display','block');
+		$('#submit1').css('display','block');
 	});
 	$('#close-sub').click(function(){
-		$('#submit').css('display','none');
+		$('#submit1').css('display','none');
 	});
 	
 	$('#sub-btn1').click(function(){
