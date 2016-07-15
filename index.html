@@ -9,15 +9,15 @@
    <link rel="stylesheet" type="text/css" href="css/index.css"/>
    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css"/>
    <link rel="stylesheet" type="text/css" href="css/base.css">
-    <link rel="stylesheet" type="text/css" href="css/mxcindex.css">
-    <link rel="stylesheet" href="css/swiper.min.css" class="swicss" />
+   <link rel="stylesheet" type="text/css" href="css/mxcindex.css">
+   <link rel="stylesheet" href="css/swiper.min.css" class="swicss" />
    <script src="js/jquery.min.js"></script>
    <script src="js/jquery.fullPage.min.js"></script>
    <script type="text/javascript" src="js/index.js"></script>
    <script type="text/javascript" src="js/raphael-min.js"></script>
-    <script type="text/javascript" src="js/chinaMapConfig.js"></script>
-    <script type="text/javascript" src="js/map.js"></script>
-    <script type="text/javascript" src="js/swiper.min.js"></script>
+   <script type="text/javascript" src="js/chinaMapConfig.js"></script>
+   <script type="text/javascript" src="js/map.js"></script>
+   <script type="text/javascript" src="js/swiper.min.js" class="swijs"></script>
    <style type="text/css" id="forhtml"></style>
    <script type="text/javascript">
    		var rem = 20;
@@ -91,7 +91,6 @@
 				<input type="button" name="" value="注册" id="linksub">
 			</div>
 		</div>
-		
 	</div>
 
 	<div class="sub" id="sub">
@@ -105,19 +104,19 @@
 				<b>密码:</b><input type="text" name="" id="name" />
 			</div>
 			<div class="sub_name clearfix">
-				<b>手机号:</b><input type="text" name="" >
-			</div class="sub_name clearfix">
+				<b>手机号:</b><input type="text" name="" />
+			</div>
 			<div class="sub_dx clearfix">
 				<input type="button" name="" value="获取短信验证码" id="submit">
 			</div>
 			
 			<div class="sub_name clearfix">
-				<b>手机验证码:</b><input type="text" name="" id="msg"><br/>
+				<b>手机验证码:</b><input type="text" name="" id="msg"/><br/>
 			</div>
 			<div  class="sub_nc clearfix">
 				<b>爸爸/妈妈:</b>
 				<div>
-					<input type="radio" name="sex" id="sex" checked="checked"><label for="sex">爸爸</label><input type="radio" name="sex" id="sex1"><label for="sex1">妈妈</label>
+					<input type="radio" name="sex" id="sex" checked="checked"><label for="sex">爸爸</label><input type="radio" name="sex" id="sex1"/><label for="sex1">妈妈</label>
 				</div>
 			</div>
 			<div class="sub_name clearfix">
@@ -126,6 +125,19 @@
 			<input type="button" name="" value="提交" id="button1" class="button1">
 
 		</div>
+	</div>
+
+	<div class="sidea">
+		
+		<ul class="qqxq">
+			<li><p>美泰适产品咨询:<br/>qq123456789</p></li>
+			<li><img src="img/p8bj1.jpg"></li>
+		</ul>
+
+		<ul class="qqandwc">
+			<li><img src="img/qq.png"></li>
+			<li><img src="img/wechat.png"></li>
+		</ul>
 	</div>
 
 	<div id="dowebok" class="dowebok">
@@ -327,7 +339,7 @@
 				<p class="p3-tit1">Ultimate eco extreme for you</p>
 				<div class="swiper-container">
 					<ul class="p3-introduce">
-						<li class="active">
+						<li>
 							<div>
 								<p>新生儿款*23片装 适合2-4kg</p>
 								<p>有机植物淀粉提取物等可再生原料占40%</p>
@@ -363,26 +375,55 @@
 								<p>有机植物淀粉提取物等可再生原料占50%</p>
 							</div>
 						</li>
+						
 					</ul>
 				    <ul class="p3-introduce-img swiper-wrapper">
-						<li class="li1 swiper-slide"><a href="javascript:;"><img src="images/cp1.png" alt=""/></a><span></span></li>
-						<li class="li2 swiper-slide"><a href="javascript:;"><img src="images/cp2.png" alt=""/></a></li>
-						<li class="li3 swiper-slide"><a href="javascript:;"><img src="images/cp3.png" alt=""/></a></li>
-						<li class="li4 swiper-slide"><a href="javascript:;"><img src="images/cp4.png" alt=""/></a></li>
-						<li class="li5 swiper-slide"><a href="javascript:;"><img src="images/cp5.png" alt=""/></a></li>
-						<li class="li6 swiper-slide"><a href="javascript:;"><img src="images/cp6.png" alt=""/></a></li>
+						<li class="li1 swiper-slide"><a href="javascript:;"><img src="images/cp1.png" alt=""/></a>
+							<div>
+								<p>新生儿款*23片装 适合2-4kg</p>
+								<p>有机植物淀粉提取物等可再生原料占40%</p>
+							</div>
+						</li>
+						<li class="li2 swiper-slide"><a href="javascript:;"><img src="images/cp2.png" alt=""/></a>
+							<div>
+								<p>迷你款*42片装 适合 3-6 kg</p>
+								<p>有机植物淀粉提取物等可再生原料占40%</p>
+							</div>
+						</li>
+						<li class="li3 swiper-slide"><a href="javascript:;"><img src="images/cp3.png" alt=""/></a>
+							<div>
+								<p>中型款*34片装 适合 4-9 kg</p>
+								<p>有机植物淀粉提取物等可再生原料占45%</p>
+							</div>
+						</li>
+						<li class="li4 swiper-slide"><a href="javascript:;"><img src="images/cp4.png" alt=""/></a>
+							<div>
+								<p>大型款*30片装 适合 7-18 kg</p>
+								<p>有机植物淀粉提取物等可再生原料占40%</p>
+							</div>
+						</li>
+						<li class="li5 swiper-slide"><a href="javascript:;"><img src="images/cp5.png" alt=""/></a>
+							<div>
+								<p>幼儿款*26片装 适合 11-25 kg</p>
+								<p>有机植物淀粉提取物等可再生原料占45%</p>
+							</div>
+						</li>
+						<li class="li6 swiper-slide"><a href="javascript:;"><img src="images/cp6.png" alt=""/></a>
+							<div>
+								<p>加大款*22片装 适合 16-30 kg</p>
+								<p>有机植物淀粉提取物等可再生原料占50%</p>
+							</div>
+						</li>
 					</ul>
-				    
-				   <!-- <div class="swiper-button-prev"></div>
-				    <div class="swiper-button-next"></div>-->
+			
 				</div>
 				
 				<ul class="p3-bottom clearfix">
-					<li class="p3-bottom-li1"><div><img src="images/tb1.png" alt=""/></div><p>极致生态</p></li>
-					<li><div><img src="images/tb2.png" alt=""/></div><p>极致健康</p></li>
-					<li><div><img src="images/tb3.png" class="img" alt=""/></div><p>极致舒适</p></li>
-					<li><div><img src="images/tb4.png" class="img" alt=""/></div><p>极致吸收</p></li>
-					<li class="p3-bottom-li2"><div><img src="images/tb5.png" alt=""/></div><p>极致贴心</p></li>
+					<li class="p3-bottom-li1"><div><img src="images/tb1.png" alt=""/><span></span></div><p>极致生态</p></li>
+					<li><div><img src="images/tb2.png" alt=""/><span></span></div><p>极致健康</p></li>
+					<li><div><img src="images/tb3.png" class="img" alt=""/><span></span></div><p>极致舒适</p></li>
+					<li><div><img src="images/tb4.png" class="img" alt=""/><span></span></div><p>极致吸收</p></li>
+					<li class="p3-bottom-li2"><div><img src="images/tb5.png" alt=""/><span></span></div><p>极致贴心</p></li>
 				</ul>
 				<div class="p3-wt clearfix">
 					<p>常见问题:<a href="javascript:;">美泰适（Moltex）生态纸尿裤都包括哪些材料？</a></p>
@@ -428,8 +469,8 @@
 					<p class="p5-tit3 hide"><span></span>你好！</p>
 				</div>
 				<div class="p5-text clearfix">
-					<input type="text" name="txt" class="txt" />
-					<input type="button" name="btn" value="输入串码" class="btn"/>
+					<input type="text" name="txt" class="txt" id="p5-text1"/>
+					<input type="button" name="btn" value="输入串码" class="btn" id="p5-text2"/>
 				</div>
 				
 				<div class="swiper-container" id="sw">
