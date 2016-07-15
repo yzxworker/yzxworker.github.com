@@ -1,9 +1,12 @@
 $(document).ready(function(){
 	$('#dowebok').fullpage({
+		anchors:['page_1', 'page_2', 'page_3','page_4','page_5','page_6','page_7'],
+		menu: '#headnav',
+		menu:'#headnav-min'
 	});
 	setInterval(function(){
   	  $.fn.fullpage.moveSlideRight();
-    }, 3000);
+    }, 5000);
 	
 
 	var p1iNow=0;
@@ -23,10 +26,13 @@ $(document).ready(function(){
 	
 	$('#headnav li').on('click',function(){
 		$('#zynavbar').animate({left:$(this).position().left,width:$(this).outerWidth()});
+		// $('#dowebok').css({transform: 'translate3d(0px, -'+$(this).index()*$('#dowebok').outerHeight()+'px, 0px)'});
+		// console.log($(this).index()*$('#dowebok').outerWidth());
 	});
 	$('#headnav-min li').on('click',function(){
 		$('#headnav-min li a').css({background:'#ccc'});
 		$(this).find('a').css({background:'#21d4b6'});
+
 	});
 
 
@@ -134,7 +140,6 @@ $(document).ready(function(){
 		var oB=obj.getElementsByClassName('next')[0];
 		
 		
-		console.log(inow);
 		 	oT.addEventListener("touchstart",function(){
 			obj.num=obj.offsetHeight-obj2.offsetHeight;
 			inow=aP2new_list[0].children[0].offsetHeight;		
@@ -281,6 +286,97 @@ $(document).ready(function(){
     reSwiper();
 	$(window).resize(function(){
 		reSwiper();
+	});
+
+
+	// 登录
+	$('#login').on('click',function(){
+		$('#uselogin').css({display:'block'});
+	});
+	$('#closelogin').on('click',function(){
+		$('#uselogin').css({display:'none'});
+	});
+
+	var loginurl='http://113.139.98.82/web/index.php?g=user&m=Contact';
+	$('#loginbtn').on('click',function(){
+		$.ajax({
+			url:loginurl,
+
+			data:{
+				g:$('#username').val(),
+				m:$('#password').val()
+			},
+			success:function(str){
+				$('#uselogin').css({display:'none'});
+				$('#loginbtn').css({display:'none'});
+			},
+			error:function(err){
+				alert(err.msg);
+			}
+		});
+	});
+	// 短信
+	var msgurl='http://113.139.98.82/web/index.php?g=user&m=sendsms&a=sms' ;
+	var msgCou=60;
+	var msgTime=null;
+	$('#submit').on('click',function(){
+		$(this).attr('disabled','disabled');
+		msgTime=setInterval(function(){
+			console.log(msgCou)
+			$('#submit').val(msgCou+'秒后可再次获取');
+			msgCou--;
+			if(msgCou<0){
+				clearInterval(msgTime);
+				$('#submit').removeAttr('disabled');
+				$('#submit').val('获取短信验证码');
+				msgCou=60;
+			}
+		},1000);
+		$.ajax({
+			url:msgurl,
+			data:{
+				'number':$('#msg').val()
+			},
+			success:function(str){
+				
+			}
+		});
+	});
+	// 注册
+
+	$('#linksub').on('click',function(){
+		$('#uselogin').css({display:'none'});
+		$('#sub').css({display:'block'});
+	});
+	$('#closesub').on('click',function(){
+		$('#sub').css({display:'none'});
+	});
+
+	var suburl='http://113.139.98.82/web/index.php?g=user&m=sendsms&a=reg';
+	$('#button1').click(function(){
+			var sex='';
+			if($('#sex').checked){
+				sex='男'; 
+			}else{
+				sex='女';
+			}
+			$.ajax({
+				url:suburl,
+				data:{
+					'user':$('#user').val(),
+					'pwd':$('#name').val(),
+					'sex':sex,
+					'nick':$('#nick').val(),
+					'sms':$('#msg').val()
+				},
+				success:function(str){
+					$('#sub').css({display:'none'});
+				},
+				error:function(err){
+					alert('err');
+				}
+			});
+		
 	});
 	
 });
