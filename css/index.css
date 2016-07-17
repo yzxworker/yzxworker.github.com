@@ -48,7 +48,7 @@
 
 
 
-header{ height:85px;  position:fixed; top:0; left:0; width:100%; z-index:100;background:rgba(0,0,0,0.2) }
+header{ height:4rem;  position:fixed; top:0; left:0; width:100%; z-index:100;background:rgba(0,0,0,0.2) }
 .headbox{ padding:0 2.5rem;  width:100%; box-sizing:border-box;}
 /*header h1{ width:8.35rem; height:2.85rem; background:url(../img/logo.png) no-repeat; background-size:100% 100%; text-indent:-9999px; overflow:hidden; margin-left:0; }*/
 
