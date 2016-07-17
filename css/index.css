@@ -1,34 +1,21 @@
+@charset "utf-8";
 /*login*/
+.page5-content .p5-cp .li1{ cursor:pointer; }
+.headbox .active a{color:#21d4b6; text-decoration:underline;}
 
-.uselogin{ position:fixed; top:0; left:0; background:#21d4b6;color:#fff; z-index:999; width:100%; height:100%; display:none; }
+
+.uselogin{ position:fixed; top:0; left:0; background:#21d4b6;color:#fff; z-index:9999; width:100%; height:100%; display:none; padding-top: 100px !important;}
 .loginwin{ width:20rem; height:20rem; margin-left:-10rem; margin-top:-10rem;padding-top: 20px; position:absolute; top:50%; left:50%; }
-.uselogin input{background:#fff;}
-.uselogin_name{ padding:0 5px  20px  5px; }
-.uselogin_name b{ float:left; width:25%; text-align:center;  font-size:16px; line-height:30px; }
-.uselogin_name input{ float:right; width:75%; height:30px; }
-.uselogin_pass{ padding:0 5px  20px  5px; }
-.uselogin_pass b{ float:left; width:25%; text-align:center;  font-size:16px; line-height:30px; }
-.uselogin_pass input{ float:right; width:75%; height:30px; }
-.btn_login input{ float:left; width:30%; margin:0 10% 0 10%; height:30px; font-size:14px; cursor:pointer; }
-.closelogin{position:absolute; width:25px; height:25px; background:url(../img/gb.png) no-repeat; background-size:100% 100%; margin-right:0.75rem; text-indent:-9999px; top:3rem; right:3rem;}
+
+.closelogin{position:absolute; width:25px; height:25px; background:url(../img/gb.png) no-repeat; background-size:100% 100%; margin-right:0.75rem; text-indent:-9999px; top:3.5rem; right:3.5rem;}
 
 
 /*注册*/
 
-.sub{ width:100%; height:100%; position:fixed; top:0; left:0; background:#21d4b6; z-index:999;text-align:right; display:none;}
-.sub input{background:#fff;}
-.subwin{ width:30rem; height:30rem; margin-left:-15rem; margin-top:-15rem;padding-top: 20px; position:absolute; top:50%; left:50%; }
-.sub_name{ padding:0 5px  10px  5px; }
-.sub_name b{ float:left; width:25%; text-align:center;  font-size:16px; line-height:30px; }
-.sub_name input{ float:right; width:75%; height:30px; }
-.sub_dx{ padding:0 5px  10px  5px; }
-.sub_dx input{ float:right;  width:75%; height:30px; cursor:pointer; font-size:14px;}
-.sub_nc{ padding:0 5px  10px  5px; }
-.sub_nc b{ float:left; width:25%; text-align:center;  font-size:16px; line-height:30px; }
-.sub_nc div{ float:right; width:75%; height:20px; text-align:center; padding-top:10px;font-size: 16px;}
-.sub .button1{ width:75%;height:30px;background:#223F7E; margin-top:30px;font-size:14px;cursor:pointer;}
-.closesub{position:absolute; width:25px; height:25px; background:url(../img/gb.png) no-repeat; background-size:100% 100%; margin-right:0.75rem; text-indent:-9999px; top:3rem; right:3rem;}
-.subtips{ font-size:14px; color:red; text-align:center;height:30px;line-height:30px; }
+.sub{ width:100%; height:100%; position:fixed; top:0; left:0; background:#21d4b6; z-index:9999;text-align:right; display:none;}
+.sub_nc{ margin:0 auto; text-align:center; height:30px; line-height: 30px; }
+.closesub{position:absolute; width:25px; height:25px; background:url(../img/gb.png) no-repeat; background-size:100% 100%; margin-right:0.75rem; text-indent:-9999px; top:3.5rem; right:3.5rem;}
+.subtips{ font-size:14px; color:red; text-align:center;height:30px;line-height:30px;margin-top:100px; }
 
  /*侧边栏*/
 .sidea{position:fixed;width:54px; height:108px;right:0;top:50%;z-index:100; margin-top:-54px;}
@@ -61,7 +48,7 @@
 
 
 
-header{ height:85px;  position:fixed; top:0; left:0; width:100%; z-index:100;background:rgba(0,0,0,0.5) }
+header{ height:85px;  position:fixed; top:0; left:0; width:100%; z-index:100;background:rgba(0,0,0,0.2) }
 .headbox{ padding:0 2.5rem;  width:100%; box-sizing:border-box;}
 /*header h1{ width:8.35rem; height:2.85rem; background:url(../img/logo.png) no-repeat; background-size:100% 100%; text-indent:-9999px; overflow:hidden; margin-left:0; }*/
 
@@ -85,6 +72,8 @@ html{ font-size: 20px;}
 
 @media screen and (max-width:767px){
 	/*注册*/
+	.subtips{ font-size:14px; color:red; text-align:center;height:30px;line-height:30px;margin-top:40px; }
+	.headbox .active a{background:#21d4b6; color:#fff; text-decoration:none;}
 	.sidea{ display:none; }
 	.sub{ width:100%; height:100%; position:fixed; top:0; left:0; background:#21d4b6; z-index:999;text-align:right;}
 	.sub input{background:#fff;}
@@ -94,10 +83,6 @@ html{ font-size: 20px;}
 	.sub_name input{ float:right; width:75%; height:30px; }
 	.sub_dx{ padding:0 5px  10px  5px; }
 	.sub_dx input{ float:right;  width:75%; height:30px; cursor:pointer; font-size:14px;}
-	.sub_nc{ padding:0 5px  10px  5px; }
-	.sub_nc b{ float:left; width:25%; text-align:center;  font-size:12px; line-height:30px; }
-	.sub_nc div{ float:right; width:75%; height:20px; text-align:center; padding-top:10px;font-size: 16px;}
-	.sub .button1{ width:75%;height:30px;background:#223F7E; margin-top:30px;font-size:14px;cursor:pointer;}
 	
 
 	/*注册*/
@@ -111,20 +96,19 @@ html{ font-size: 20px;}
 	.submit_name textarea{ width: 75%; height: 100px;}
 	.submit .btn1{ width:75%;height:30px;background:#223F7E; margin-top:30px;font-size:14px;cursor:pointer;}
 	.close-sub{position:absolute; width:25px; height:25px; background:url(../img/gb.png) no-repeat; background-size:100% 100%; margin-right:0.75rem; text-indent:-9999px; top:2rem; right:2rem;}
-	.sub-tips{ font-size:14px; color:red; text-align:center;height:30px;line-height:30px; }
-
+	.sub-tips{ font-size:14px; color:red; text-align:center;height:30px;line-height:30px;}
 
 
 
 	header .zynavbar{ display:none; }
-	header{ height:65px;  position:fixed; top:0; left:0; width:100%; z-index:100;background:rgba(0,0,0,0.5) }
+	header{ height:65px;  position:fixed; top:0; left:0; width:100%; z-index:100;background:rgba(0,0,0,0.3) }
 	.headbox h1{ float:left;margin-top: 2rem; }
 	.navbtn{ float:right; width:32px; height:32px; background:url(../img/navbar.png) no-repeat; margin: 2rem -1rem 0 0;}
 	.fpnavabox{width: 10rem; float:right;}
-	.headnav{ display: none; }
-	.headnav-min{ position:absolute; right: -15rem; top: 7rem; }
-	.headnav-min li{ text-align: center; line-height: 3rem; }
-	.headnav-min li a{ background: #ccc; display: block; color: #000; padding: 0 2rem; }
+	/*.headnav{ display: none; }*/
+	.headnav{ position:absolute; right: -15rem; top: 7rem; }
+	.headnav li{ text-align: center; line-height: 3rem; }
+	.headnav li a{ background: #ccc; display: block; color: #000; padding: 0 2rem; }
 
 	.login {margin-top: 1.45rem; float:left;}
 	.login a {font-size:14px;color: #fff;font-family: '微软雅黑'; line-height: 3rem;}
@@ -227,7 +211,7 @@ html{ font-size: 20px;}
 	.headnav{ float:left; }
 	.login { margin-top:1.45rem; margin-right:0px; float: right;}
 	.login a{ font-size: 16px; color:#fff; font-family: '微软雅黑'; }
-	header h1{margin-top: 1.4rem; width:8.35rem; height:2.85rem; background:url(../img/logo.png) no-repeat; background-size:100% 100%; text-indent:-9999px; overflow:hidden; margin-left:0; float:left;}
+	header h1{margin-top: 0.5rem; width:8.35rem; height:2.85rem; background:url(../img/logo.png) no-repeat; background-size:100% 100%; text-indent:-9999px; overflow:hidden; margin-left:0; float:left;}
 	.patext{ width:100%; height:100%; background:rgba(0,0,0,0.7); position:absolute; top:0; left:0; margin:0; padding:0; }
 
 	.potitle{  padding:0.85rem; border:3px solid #21d4b6; font-size: 2rem; color:#fff; position:absolute; top:35%; left:50%; margin-left:-7.25rem; font-family:'微软雅黑'; }
@@ -318,7 +302,7 @@ html{ font-size: 20px;}
 @media screen and (min-width: 992px) {
 	.page4{background:url(../img/zz-01.jpg) no-repeat center; height:100%; width:100%; position:relative;background-size: cover; padding: 0;}
 	.page4 .wz{ width:100%; position:absolute; top:9.5%; color:#00d6b2;}
-	.page4 .wz .wz-1{width:25.5rem; height:2.5rem; margin:0 auto; border-bottom: 1px solid #00d6b2; line-height:2.5rem; text-align:center;font-size:1.25rem;font-weight:bold; letter-spacing:1px;color: #00d6b2;  margin-top: 1rem;}
+	.page4 .wz .wz-1{width:25.5rem; height:2.5rem; margin:0 auto; border-bottom: 1px solid #00d6b2; line-height:2.5rem; text-align:center;font-size:1.25rem; letter-spacing:1px;color: #00d6b2;  margin-top: 1rem;}
 	.page4 .wz .wz-1 span{ font-size:2.1rem; }
 	.page4 .wz .wz-2{ text-align:center; font-size:1rem; letter-spacing:1px;color: #00d6b2;}
 
@@ -437,9 +421,9 @@ html{ font-size: 20px;}
 	
 	.page3{height: 100%; background: url(../images/cp.jpg) no-repeat center; background-size: cover; padding: 0; position: relative;}
 	.page3 .bg{ width: 100%; height: 100%; background: #fff; opacity: 0.4; filter: alpha(opacity:40); position: absolute; left: 0; top: 0;}
-	.page3-content{ width: 100%; position: relative; top: 8%; z-index: 2;}
+	.page3-content{ width: 100%; position: relative; top: 4%; z-index: 2;}
 	
-	.p3-tit{ padding: 0; width: 23rem; text-align: center; margin: 0 auto; font-size: 2.05rem; color: #21D4B6; height: 2.55rem; line-height: 2.55rem; font-weight: bold; border-bottom: 1px solid #21D4B6; letter-spacing: 0.4rem;}
+	.p3-tit{ padding: 0; width: 23rem; text-align: center; margin: 0 auto; font-size: 2.1rem; color: #21D4B6; height: 2rem; line-height: 2rem; border-bottom: 1px solid #21D4B6; letter-spacing: 0.4rem;}
 	.p3-tit1{ padding: 0; width: 100%; height: 1.2rem; line-height: 1.2rem; margin: 0 auto; text-align: center; font-size: 1.2rem; color: #21D4B6; letter-spacing: 0.1rem;}
 	
 	
@@ -462,7 +446,8 @@ html{ font-size: 20px;}
 	.p3-introduce-img .li5{ left: 18.8rem !important; top: 0; width: 6.3rem !important; height: 6rem;}
 	.p3-introduce-img .li6{ left: 23rem !important; top: 1.7rem; width: 6.2rem !important; height: 5rem;}
 	
-	.p3-bottom{ width: 36rem; margin: 0 auto; height: 4.3rem; text-align: center; margin-top: 2.5rem;}
+	.p3-txt{width: 36rem; height: 4rem; margin: 0 auto; font-size: 0.75rem; color: #00D6B2; opacity: 0; filter: alpha(opacity:0);}
+	.p3-bottom{ width: 36rem; margin: 0 auto; height: 4.3rem; text-align: center; margin-top: 0.5rem;}
 	.p3-bottom li{float: left; margin: 0 2rem;}
 	.p3-bottom .p3-bottom-li1{ margin-left: 0;}
 	.p3-bottom .p3-bottom-li2{ margin-right: 0;}
@@ -482,13 +467,13 @@ html{ font-size: 20px;}
 	
 	.page3{height: 100%; background: url(../images/cp.jpg) no-repeat center; background-size: cover; padding: 0; position: relative;}
 	.page3 .bg{ width: 100%; height: 100%; background: #fff; opacity: 0.4; filter: alpha(opacity:40); position: absolute; left: 0; top: 0;}
-	.page3-content{ width: 100%; position: relative; top: 7%; z-index: 2;}
+	.page3-content{ width: 100%; position: relative; top: 5%; z-index: 2;}
 	
 
-	.p3-tit{ padding: 0; width: 27rem; text-align: center; margin: 0 auto; font-size: 2.05rem; color: #21D4B6; height: 2.55rem; line-height: 2.55rem; font-weight: bold; border-bottom: 1px solid #21D4B6; letter-spacing: 0.4rem;}
+	.p3-tit{ padding: 0; width: 27rem; text-align: center; margin: 0 auto; font-size: 2.05rem; color: #21D4B6; height: 2.55rem; line-height: 2.55rem;  border-bottom: 1px solid #21D4B6; letter-spacing: 0.4rem;}
 	.p3-tit1{ padding: 0; width: 27rem; height: 2rem; line-height: 2rem; margin: 0 auto; text-align: center; font-size: 1.5rem; color: #21D4B6; letter-spacing: 0.2rem;}
 
-	.p3-introduce{ height: 5rem !important; margin-top: 0.45rem !important;}
+	.p3-introduce{ height: 4rem !important; margin-top: 0.45rem !important;}
 	.p3-introduce .show div{ display: block;}
 	.p3-introduce li div{ width: 26rem !important; height: 3.5rem !important; text-align: center; margin: 0 auto;  background: #73797f; display: none;}
 	.p3-introduce li p{ color: #fff; font-size: 0.75rem !important; line-height: 1.5rem !important; margin:0; padding-top: 0.25rem !important; font-weight: bold;}
@@ -506,7 +491,8 @@ html{ font-size: 20px;}
 	.p3-introduce-img .li5{ left: 18.8rem !important; top: 0; width: 8.3rem !important; }
 	.p3-introduce-img .li6{ left: 23rem !important; top: 1.7rem; width: 8.2rem !important;}
 	
-	.p3-bottom{ width: 36rem; margin: 0 auto; height: 4.3rem; text-align: center; margin-top: 1.5rem;}
+	.p3-txt{width: 38rem; height: 6rem; margin: 0 auto; font-size: 0.75rem; color: #00D6B2; opacity: 0; filter: alpha(opacity:0);}
+	.p3-bottom{ width: 36rem; margin: 0 auto; height: 4.3rem; text-align: center; margin-top: 0.2rem;}
 	.p3-bottom li{float: left; margin: 0 2rem;}
 	.p3-bottom .p3-bottom-li1{ margin-left: 0;}
 	.p3-bottom .p3-bottom-li2{ margin-right: 0;}
@@ -555,7 +541,8 @@ html{ font-size: 20px;}
 	.p3-introduce-img .li5 img{ width: 10.3rem;}
 	.p3-introduce-img .li6 img{ width: 10.2rem;}
 	
-	.p3-bottom{ width: 21rem; margin: 0 auto; height: 4.5rem; text-align: center; margin-top: 2.5rem; overflow: hidden;}
+	.p3-txt{width: 30rem; height: 6rem; margin: 0 auto; font-size:12px; color: #00D6B2; opacity:0; filter: alpha(opacity:0);}
+	.p3-bottom{ width: 21rem; margin: 0 auto; height: 4.5rem; text-align: center;  overflow: hidden;}
 	.p3-bottom li{float: left; margin:1.5rem;}
 	
 	.p3-bottom li div{ display: none;}
@@ -563,7 +550,7 @@ html{ font-size: 20px;}
 	.p3-bottom li span{display: inline-block; vertical-align: middle; width: 0px; height: 100%;}
 	
 	/*问题*/
-	.p3-wt{ width: 21rem; text-align: center; margin: 0 auto; margin-top: 1.2rem; }
+	.p3-wt{ width: 30rem; text-align: center; margin: 0 auto; margin-top: 1.2rem; }
 	.p3-wt p{ color: #21D4B6; font-size: 1.2rem; line-height: 1.2rem; margin: 0;}
 	.p3-wt a{ color: #666; font-size: 0.8rem; line-height:1.2rem; height: 1.2rem; border-bottom: 1px solid #666; outline: none; text-decoration: none;}
 }
@@ -581,7 +568,7 @@ html{ font-size: 20px;}
 	.page5 .page5-content .p5-h p{ display: none;}
 	.page5 .page5-content .p5-h .show{ display: block;}
 	.page5 .page5-content .p5-h .hide{ display: hide;}
-	.page5 .page5-content .p5-tit{ width: 31rem; height: 3.7rem; line-height: 3.7rem; margin: 0 auto; text-align: center;  font-size: 2.3rem; font-weight: bold; color: #21D4B6; border-bottom: 1px solid #21D4B6;}
+	.page5 .page5-content .p5-tit{ width: 31rem; height: 3.7rem; line-height: 3.7rem; margin: 0 auto; text-align: center;  font-size: 2.3rem; color: #21D4B6; border-bottom: 1px solid #21D4B6;}
 	.page5 .page5-content .p5-tit1{ width: 31rem; height: 1.8rem; line-height: 1.8rem; margin: 0 auto; text-align: center; font-size: 0.7rem; letter-spacing: 0.3rem; color: #21D4B6;}
 	.page5 .page5-content .p5-tit3{ width: 31rem; height: 5.5rem; line-height: 5rem; margin: 0 auto; text-align: center; font-size: 3.3rem; color: #21D4B6;}
 	
@@ -631,7 +618,7 @@ html{ font-size: 20px;}
 	.page5 .page5-content .p5-h p{ display: none;}
 	.page5 .page5-content .p5-h .show{ display: block;}
 	.page5 .page5-content .p5-h .hide{ display: hide;}
-	.page5 .page5-content .p5-tit{ width: 31rem; height: 3rem; line-height: 3rem; margin: 0 auto; text-align: center;  font-size: 3rem; font-weight: bold; color: #21D4B6; border-bottom: 1px solid #21D4B6;}
+	.page5 .page5-content .p5-tit{ width: 31rem; height: 3rem; line-height: 3rem; margin: 0 auto; text-align: center;  font-size: 3rem; color: #21D4B6; border-bottom: 1px solid #21D4B6;}
 	.page5 .page5-content .p5-tit1{ width: 35rem; height: 2rem; line-height: 2rem; margin: 0 auto; text-align: center; font-size: 1.2rem; letter-spacing: 0.3rem; color: #21D4B6;}
 	.page5 .page5-content .p5-tit3{ width: 31rem; height: 5.5rem; line-height: 5rem; margin: 0 auto; text-align: center; font-size: 3.3rem; color: #21D4B6;}
 	

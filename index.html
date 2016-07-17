@@ -11,6 +11,7 @@
    <link rel="stylesheet" type="text/css" href="css/base.css">
    <link rel="stylesheet" type="text/css" href="css/mxcindex.css">
    <link rel="stylesheet" href="css/swiper.min.css" class="swicss" />
+   <link rel="stylesheet" type="text/css" href="css/styles.css">
    <script src="js/jquery.min.js"></script>
    <script src="js/jquery.fullPage.min.js"></script>
    <script type="text/javascript" src="js/index.js"></script>
@@ -45,30 +46,19 @@
 		<div class="headbox">
 			<h1 class="">美泰适</h1>
 			<div class="fpnavabox clearfix">
-				<span class="zynavbar" id="zynavbar"></span>
 				<ul class="headnav"  id="headnav">
-					<li data-menuanchor="page_1"><a href="#page_1">首页</a></li>
-					<li data-menuanchor="page_2"><a href="#page_2">美泰适</a></li>
-					<li data-menuanchor="page_3"><a href="#page_3">产品</a></li>
-					<li data-menuanchor="page_4"><a href="#page_4">资质</a></li>
-					<li data-menuanchor="page_5"><a href="#page_5">适友</a></li>
-					<li data-menuanchor="page_6"><a href="#page_6">育儿</a></li>
-					<li data-menuanchor="page_7"><a href="#page_7">联系</a></li>
+					<li data-menuanchor="page_1" class="active"><a href="#page_1">首页</a></li>
+					<li data-menuanchor="page_2" class=""><a href="#page_2">美泰适</a></li>
+					<li data-menuanchor="page_3" class=""><a href="#page_3">产品</a></li>
+					<li data-menuanchor="page_4" class=""><a href="#page_4">资质</a></li>
+					<li data-menuanchor="page_5" class=""><a href="#page_5">适友</a></li>
+					<li data-menuanchor="page_6" class=""><a href="#page_6">育儿</a></li>
+					<li data-menuanchor="page_7" class=""><a href="#page_7">联系</a></li>
 				</ul>
 				<a href="javascript:;" class="navbtn" id="navbtn"></a>
 				<div class=" login">
 					<a href="javascript:;" class="" id="login">登录/注册</a>
 				</div>
-				<ul class="headnav-min"  id="headnav-min">
-					<li data-menuanchor="page_1"><a href="#page_1">首页</a></li>
-					<li data-menuanchor="page_2"><a href="#page_2">美泰适</a></li>
-					<li data-menuanchor="page_3"><a href="#page_3">产品</a></li>
-					<li data-menuanchor="page_4"><a href="#page_4">资质</a></li>
-					<li data-menuanchor="page_5"><a href="#page_5">适友</a></li>
-					<li data-menuanchor="page_6"><a href="#page_6">育儿</a></li>
-					<li data-menuanchor="page_7"><a href="#page_7">联系</a></li>
-				</ul>
-
 				
 				
 			</div> 
@@ -76,55 +66,31 @@
 		
 	</header>
 
-	<div class="uselogin" id="uselogin">
+	<div class="uselogin form" id="uselogin">
 		<a href="javascript:;" class="closelogin" id="closelogin"></a>
-		<div class="loginwin">
-			<div class="uselogin_name clearfix">
-				<b>用户名:</b><input type="text" name="" id="username"  />
-			</div>
-			<div class="uselogin_pass clearfix">
-				<b>密码:</b><input type="password" name="" id="password" />
-			</div>
-			
-			<div class="btn_login clearfix">
-				<input type="button" value="登录" id="loginbtn" />
-				<input type="button" name="" value="注册" id="linksub">
-			</div>
+		<input type="text" name="" id="username" placeholder="User/用户名"  class="input" />
+		<input type="password" name="" id="password" placeholder="Password/密码" class="input" />
+		<div class="btn_login clearfix">
+			<button type="button" value="登录" id="loginbtn" >登录</button>
+			<button type="button" name="" value="注册" id="linksub">注册</button>
 		</div>
 	</div>
 
-	<div class="sub" id="sub">
+	<div class="sub form" id="sub">
 		<a href="javascript:;" class="closesub" id="closesub"></a>
-		<div class="subwin">
 			<p class="subtips" id="subtips"></p>
-			<div class="sub_name clearfix">
-				<b>用户名:</b><input type="text" name="" id="user"  />
-			</div>
-			<div class="sub_name clearfix">
-				<b>密码:</b><input type="text" name="" id="name" />
-			</div>
-			<div class="sub_name clearfix">
-				<b>手机号:</b><input type="text" name="" />
-			</div>
-			<div class="sub_dx clearfix">
-				<input type="button" name="" value="获取短信验证码" id="submit">
-			</div>
-			
-			<div class="sub_name clearfix">
-				<b>手机验证码:</b><input type="text" name="" id="msg"/><br/>
-			</div>
+			<input type="text" name="" id="user" placeholder="Phone/手机"  class="input" />
+			<input type="text" name="" id="msg" placeholder="SMS/短信" class="input" />
+			<button type="button" name="" value="" id="submit">获取短信验证码</button>
+			<input type="text" name="" id="nick" placeholder="name/昵称" class="input" />
+			<input type="text" name="" id="password" placeholder="password/密码"  class="input" />
+			<input type="text" name="" id="conpass" placeholder="confirm password/确认密码"  class="input" />
 			<div  class="sub_nc clearfix">
-				<b>爸爸/妈妈:</b>
 				<div>
 					<input type="radio" name="sex" id="sex" checked="checked"><label for="sex">爸爸</label><input type="radio" name="sex" id="sex1"/><label for="sex1">妈妈</label>
 				</div>
 			</div>
-			<div class="sub_name clearfix">
-				<b>昵称:</b><input type="text" name="" id="nick">
-			</div>
-			<input type="button" name="" value="提交" id="button1" class="button1">
-
-		</div>
+			<button type="button" name="" value="提交" id="button1" class="button1">提交</button>
 	</div>
 
 	<div class="sidea">
@@ -266,7 +232,7 @@
 		                  <div class="new-overflow">
 		                      <dl class="new-list">
 		                        <dd >
-		                          <a href="javascript:;">
+		                          <a href="erji.html">
 		                            <div class="new-img">
 		                              <img src="img/p2new-img.jpg">
 		                            </div>
@@ -278,7 +244,7 @@
 		                          </a>
 		                        </dd>
 		                        <dd >
-		                          <a href="javascript:;">
+		                          <a href="erji.html">
 		                            <div class="new-img">
 		                              <img src="img/p2new-img1.jpg">
 		                            </div>
@@ -290,7 +256,7 @@
 		                          </a>
 		                        </dd>
 		                        <dd >
-		                          <a href="javascript:;">
+		                          <a href="erji.html">
 		                            <div class="new-img">
 		                              <img src="img/p2new-img2.jpg">
 		                            </div>
@@ -301,7 +267,7 @@
 		                            </div>
 		                          </a>
 		                        </dd><dd >
-		                          <a href="javascript:;">
+		                          <a href="erji.html">
 		                            <div class="new-img">
 		                              <img src="img/p2new-img3.jpg">
 		                            </div>
@@ -312,7 +278,7 @@
 		                            </div>
 		                          </a>
 		                        </dd><dd >
-		                          <a href="javascript:;">
+		                          <a href="erji.html">
 		                            <div class="new-img">
 		                              <img src="img/p2new-img4.jpg">
 		                            </div>
@@ -323,7 +289,7 @@
 		                            </div>
 		                          </a>
 		                        </dd><dd >
-		                          <a href="javascript:;">
+		                          <a href="erji.html">
 		                            <div class="new-img">
 		                              <img src="img/p2new-img5.jpg">
 		                            </div>
@@ -335,7 +301,7 @@
 		                          </a>
 		                        </dd>
 		                        <dd >
-		                          <a href="javascript:;">
+		                          <a href="erji.html">
 		                            <div class="new-img">
 		                              <img src="img/p2new-img6.jpg">
 		                            </div>
@@ -444,7 +410,7 @@
 					</ul>
 			
 				</div>
-				
+				<p class="p3-txt">美泰适生态纸尿裤原料选材有机生态，采用天然原料产品高度环保40%-50%可再生，从原料供货商源头供应到生产环节再到成品，始终坚持生态环保生产真正达到绿色生态产业链，并通过全球顶级生态医学检测机构Dermatest GmbH研究所得相关皮肤测试。确保每一片美泰适生态纸尿裤拥有绝对零刺激的皮肤亲和力表示为skin frinedly。</p>
 				<ul class="p3-bottom clearfix">
 					<li class="p3-bottom-li1"><div><img src="images/tb1.png" alt=""/><span></span></div><p>极致生态</p></li>
 					<li><div><img src="images/tb2.png" alt=""/><span></span></div><p>极致健康</p></li>
@@ -453,7 +419,7 @@
 					<li class="p3-bottom-li2"><div><img src="images/tb5.png" alt=""/><span></span></div><p>极致贴心</p></li>
 				</ul>
 				<div class="p3-wt clearfix">
-					<p>常见问题:<a href="javascript:;">美泰适（Moltex）生态纸尿裤都包括哪些材料？</a></p>
+					<p>常见问题:<a href="erji.html">美泰适（Moltex）生态纸尿裤都包括哪些材料？</a></p>
 				</div>
 			</div>
 		</div>
@@ -464,22 +430,22 @@
 	            <p class="wz-2">Rigor&nbsp;&nbsp;&nbsp;is&nbsp;&nbsp;an&nbsp;&nbsp;attitude&nbsp;&nbsp;of&nbsp;&nbsp;excellence&nbsp;&nbsp;is&nbsp;&nbsp;a&nbsp;&nbsp;habit</p>
 	        </div>
 	       	<ul class="zz clearfix">
-	        	<li><a href="javascript:;">
+	        	<li><a href="erji.html">
 	            	<img src="img/zz-01.png" alt=""/>
 	                <p>100%产自德国</p>
 	                </a>
 	            </li>
-	            <li><a href="javascript:;">
+	            <li><a href="erji.html">
 	            	<img src="img/zz-02.png" alt=""/>
 	                <p>绿色品牌</p>
 	                </a>
 	            </li>
-	            <li><a href="javascript:;"><img src="img/zz-03.png" alt=""/><p>100%无氯漂白</p></a></li>
-	            <li class="z2"><a href="javascript:;"><img src="img/zz-04.png" alt=""/><p class="p1">100%可再生生态清洁能源</p></a></li>
-	            <li class="z1"><a href="javascript:;"><img src="img/zz-05.png" alt=""/><p>肌肤测试</p></a></li>
-	            <li class="z1"><a href="javascript:;"><img class="img" src="img/zz-06.png" alt=""/><p class="p1">FSC国际森林管理委员会认证</p></a></li>
-	            <li class="z1"><a href="javascript:;"><img class="img1"src="img/zz-07.png" alt=""/><p>kidsgo 推荐</p></a></li>
-	            <li class="z1 z2"><a href="javascript:;"><img class="img2"src="img/zz-08.png" alt=""/><p>国际可持续奖</p></a></li>
+	            <li><a href="erji.html"><img src="img/zz-03.png" alt=""/><p>100%无氯漂白</p></a></li>
+	            <li class="z2"><a href="erji.html"><img src="img/zz-04.png" alt=""/><p class="p1">100%可再生生态清洁能源</p></a></li>
+	            <li class="z1"><a href="erji.html"><img src="img/zz-05.png" alt=""/><p>肌肤测试</p></a></li>
+	            <li class="z1"><a href="erji.html"><img class="img" src="img/zz-06.png" alt=""/><p class="p1">FSC国际森林管理委员会认证</p></a></li>
+	            <li class="z1"><a href="erji.html"><img class="img1"src="img/zz-07.png" alt=""/><p>kidsgo 推荐</p></a></li>
+	            <li class="z1 z2"><a href="erji.html"><img class="img2"src="img/zz-08.png" alt=""/><p>国际可持续奖</p></a></li>
 	            
 	        </ul>
 		</div>

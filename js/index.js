@@ -1,8 +1,7 @@
 $(document).ready(function(){
 	$('#dowebok').fullpage({
 		anchors:['page_1', 'page_2', 'page_3','page_4','page_5','page_6','page_7'],
-		menu: '#headnav',
-		menu:'#headnav-min'
+		menu: '#headnav'
 	});
 	setInterval(function(){
   	  $.fn.fullpage.moveSlideRight();
@@ -12,27 +11,15 @@ $(document).ready(function(){
 	var p1iNow=0;
 	$('#navbtn').on('click',function(){
 		if(p1iNow%2==0){
-			$('#headnav-min').animate({right:0+'rem'});
+			$('#headnav').animate({right:0+'rem'});
 		}else{
-			$('#headnav-min').animate({right:-15+'rem'});
+			$('#headnav').animate({right:-15+'rem'});
 		}
 		p1iNow++;
 	});
 	$('.fp-prev').css({opacity:0});
 	$('.fp-next').css({opacity:0});
 
-	// 导航栏
-	$('#zynavbar').css({width:$('#headnav li').eq(0).outerWidth()});
-	
-	$('#headnav li').on('click',function(){
-		$('#zynavbar').animate({left:$(this).position().left,width:$(this).outerWidth()});
-	
-	});
-	$('#headnav-min li').on('click',function(){
-		$('#headnav-min li a').css({background:'#ccc'});
-		$(this).find('a').css({background:'#21d4b6'});
-
-	});
 
 	// 侧边栏
 	$('.qqandwc li').hover(function(){
@@ -222,12 +209,10 @@ $(document).ready(function(){
 						     //    }
 							                
 					        }else{    
-					            alert(data.msg); 
 					        $('.contact-con .region-search .region-show').css('display','none');
 					        }    
 					    },    
 					    error : function() {       
-					          alert("网络异常！");    
 					    }    
 
 			        })
@@ -268,12 +253,10 @@ $(document).ready(function(){
 			            	oP7region_show[0].appendChild(oP);
 			            }
 					                
-			        }else{    
-			            alert(data.msg);         
+			        }else{       
 			        }    
 			    },    
 			    error : function() {       
-			          alert("网络异常！");    
 			    }    
 
 	        })
@@ -337,7 +320,10 @@ $(document).ready(function(){
 		$('.p5-right div').eq($(this).index()).addClass('show');
 	});
 	
-	
+	$('.p3-bottom-li1').mouseenter(function(){
+		
+		$('.p3-txt').css('opacity',1);
+	});
 	
 	function toSwiper(){
 		var ch=document.documentElement.clientWidth||document.body.clientWidth;
@@ -412,12 +398,12 @@ $(document).ready(function(){
 		$(this).attr('disabled','disabled');
 		msgTime=setInterval(function(){
 			console.log(msgCou)
-			$('#submit').val(msgCou+'秒后可再次获取');
+			$('#submit').html(msgCou+'秒后可再次获取');
 			msgCou--;
 			if(msgCou<0){
 				clearInterval(msgTime);
 				$('#submit').removeAttr('disabled');
-				$('#submit').val('获取短信验证码');
+				$('#submit').html('获取短信验证码');
 				msgCou=60;
 			}
 		},1000);
@@ -425,7 +411,7 @@ $(document).ready(function(){
 			url:msgurl,
 			type:'post',
 			data:{
-				'number':$('#msg').val()
+				'number':$('#user').val()
 			},
 			success:function(str){
 				
@@ -444,6 +430,11 @@ $(document).ready(function(){
 
 	var submiturl='http://113.139.98.82/web/index.php?g=user&m=sendsms&a=reg';
 	$('#button1').click(function(){
+			if($('#password').val()!=$('#conpass').val()) {
+				$('#password').css({border:'1px solid red'});
+				$('#conpass').css({border:'1px solid red'});
+				return;
+			}else{
 			var sex='';
 			if($('#sex').checked){
 				sex='男'; 
@@ -455,9 +446,9 @@ $(document).ready(function(){
 				type:'post',
 				data:{
 					'user':$('#user').val(),
-					'pwd':$('#name').val(),
+					'pwd':$('#password').val(),
 					'sex':sex,
-					'nick':$('#nick').val(),
+					'nick':$('#name').val(),
 					'sms':$('#msg').val()
 				},
 				success:function(str){
@@ -467,13 +458,14 @@ $(document).ready(function(){
 					$('#subtips').html(err.msg);
 				}
 			});
+		}
 		
 	});
 
 
 	// 提交订单
 	var subUrl='http://113.139.98.82/web/index.php?g=user&m=Integral';
-	$('.p3-introduce-img li').click(function(){
+	$('.p5-cp li').click(function(){
 		$('#submit1').css('display','block');
 	});
 	$('#close-sub').click(function(){
